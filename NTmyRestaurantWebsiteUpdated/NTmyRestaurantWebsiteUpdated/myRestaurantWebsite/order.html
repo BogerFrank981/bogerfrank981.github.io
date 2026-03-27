@@ -1,0 +1,76 @@
+<!--
+    File: order.html
+    Purpose: Order Online page for the company
+
+    This page:
+    - Displays a description of each item on the menu
+    - Allows customers to calculate the price of catering services
+    - Provides a form for entering service details
+    - Displays the calculated total price and breakdown of costs
+
+    Technologies used:
+    - HTML: Page structure and text
+    - CSS: Page styling (style.css)
+    - JavaScript: Button interactivity (script.js)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="test.html">Testimonials</a></li>
+            <li><a href="order.html">Order Online</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <p id="today-date"></p>
+    
+    <main>
+        <h1>Order Checkout</h1>
+        <p>Enjoy the ordering! (Note that menu options have been constrained for the purpose of this unofficial website)</p>
+
+        <!-- Limited Menu Options, implemented by JavaScript-->
+        <section class="menu-grid" aria-label="Restaurant menu">
+            <h2>Menu</h2>
+            <div id="menu-items"></div>
+        </section>
+
+        <!-- Information about the order (price & quantity) made by the user-->
+        <section class="cart-summary" aria-live="polite">
+            <h2>Cart Summary</h2>
+            <p>Items in cart: <span id="cart-count">0</span></p>
+            <p>Cart total: <strong id="cart-total">€0.00</strong></p>
+        </section>
+
+        <section class="checkout-cart" aria-live="polite">
+            <h2>Checkout Cart</h2>
+            <div id="cart-items"></div>
+            <p class="checkout-total">Total: <strong id="checkout-total">€0.00</strong></p>
+        </section>
+
+        <!-- Clear cart to make changes to the order -->
+        <section class="checkout-actions">
+            <button onclick="clearCart()">Empty Cart</button>
+        </section>
+
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
