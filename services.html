@@ -1,0 +1,70 @@
+<!--
+    File: services.html
+    Purpose: Services offered by the company
+
+    This page:
+    - Describes the services we offer
+    - Uses headings, paragraphs, and lists to organise information
+    - Includes a button that triggers a JavaScript function, also encourages the website visitor to contact us for any concerns
+
+    Technologies used:
+    - HTML: Content structure
+    - CSS: Styling and layout
+    - JavaScript: User interaction (script.js)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="test.html">Testimonials</a></li>
+            <li><a href="order.html">Order Online</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <p id="today-date"></p>
+    
+    <main>
+        <h1>Our Services</h1>
+        <p>We offer a range of services to ensure every customer enjoys a comfortable and memorable dining experience. Our goal is to provide high-quality food, excellent service, and a welcoming atmosphere for all.</p>
+
+        <h3>Dining with us</h3>
+        <p>We offer a variety of dishes to suit all tastes, from light meals to full-course dining. Our menu is designed to cater for individuals, families, and groups.</p>
+
+        <h3>Reservations</h3>
+        <p>Customers can book a table in advance to avoid waiting times. We accommodate small and large groups and aim to provide a smooth and organised dining experience.</p>
+
+        <h3>Food & Beverage Service</h3>
+        <p>All meals are freshly prepared and served by our friendly staff. We offer a selection of starters, main courses, desserts, and drinks</p>
+
+        <img src="images/Services.jpeg" alt="Our Services" class="centre">
+
+        <h3 class="extras-heading">Optional Extras</h3>
+
+        <ul class ="extras-list">
+            <li>Takeaway service for customers on the go</li>
+            <li>Special menu options for events and occasions</li>
+            <li>Friendly staff available to assist with menu choices</li>
+        </ul>
+
+        <button class = "contact-btn" onclick="showServicesAlert()">Contact Us</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

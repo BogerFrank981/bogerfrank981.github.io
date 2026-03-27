@@ -1,0 +1,69 @@
+<!--
+    File: about.html
+    Purpose: About Us page for the company
+
+    This page:
+    - Explains the background of the company through interviewing with an owner of the restaurant
+    - Builds trust by describing experience and services
+    - Includes three buttons that run JavaScript when clicked, appeasing newcomers and encouraging them to learn the outline of the basis of the company
+
+    Technologies used:
+    - HTML: Page structure and text
+    - CSS: Page styling (style.css)
+    - JavaScript: Button interactivity (script.js)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="test.html">Testimonials</a></li>
+            <li><a href="order.html">Order Online</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <p id="today-date"></p>
+
+    <main>
+        <h1>About Us — With A Background Video</h1>
+        
+        <!-- Embedded Facebook Video -->
+        <div style="text-align: center; margin: 20px 0;">
+        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Ftasteofmonaghan%2Fvideos%2F2373643769590520%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        </div>
+
+        <!-- History of the Company and what It Represents -->
+         <h3>A Brief History</h3>
+        <p>Eastern Balti House has been serving the Monaghan community for thirteen years, bringing the authentic flavours of Balti cuisine to your table. Our journey began with a passion for sharing delicious, traditional dishes and creating a warm, inviting atmosphere for everyone.</p>
+
+        <p>Which all began when Taus, one of the co-founders of this special business, initially came from Bangladesh to Dublin, Ireland, for the learning experience in the city centre where one of the restaurants he got a job in was called Eastern Balti House.</p>
+
+        <p>His elder cousin brother — another co-founder from Bangladesh — who was also in Dublin at the time in 2001, granted Taus a work permit.</p>
+
+        <p>Together with Taus and his two cousin brothers, they established the new Eastern Balti House in Monaghan in 2003, making sure the criterion for an Indian-style catering service to be set up in Monaghan, Ireland, was met.</p>
+        
+        <button onclick="showAboutAlert()">Learn More</button>
+        <button onclick="showAboutAlertUpdate()">Learn More (Again)</button>
+        <button onclick="showAnotherUpdate()">Important Information</button>
+        <button onclick="FunFact()">Fun Fact</button>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

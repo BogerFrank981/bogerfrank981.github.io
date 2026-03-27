@@ -1,0 +1,409 @@
+/* ============================================================
+   GLOBAL PAGE STYLES
+   These styles apply to the whole page
+   ============================================================ */
+
+/* Style the entire web page */
+body {
+    font-family: Arial, sans-serif; /* Change the font for the whole pages */
+    margin: 0; /* Remove default browser margin */
+    padding: 0; /* Remove default browser padding */
+    background-color: #f4f4f4; /* Light grey background colour */
+    padding-bottom: 80px; /* Space at bottom for fixed footer */
+}
+
+/* ============================================================
+   DATE DISPLAY STYLING (Home Page)
+   ============================================================ */
+
+#today-date {
+    color: #003366; /* Dark blue text */
+    font-weight: bold; /* Make text bold */
+    font-size: 1.1rem; /* Slightly larger text */
+    margin-bottom: 20px; /* Space below the date */
+}
+
+/* ============================================================
+    HEADER & NAVIGATION
+   ============================================================ */
+
+/* Style the header section */
+header {
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    padding: 10px 0; /* Space above and below content */
+}
+
+/* Remove bullets and centre navigation list */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    text-align: center; /* Centre the menu */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+/* Display navigation links side by side */
+nav ul li {
+    display: inline; /* Make list items appear in a row */
+    margin: 0 15px; /* Space between links */
+}
+
+/* Style the navigation links */
+nav ul li a {
+    color: white; /*White link text */
+    text-decoration: none; /* Remove underline */
+}   
+
+/* Change link style when mouse hovers */
+nav ul li a:hover {
+    text-decoration: underline; /* Underline link on hover */
+}
+
+/* ============================================================
+   MAIN CONTENT AREA
+   ============================================================ */
+
+/* Style the main content area */
+main {
+    text-align: center; /* Centre text inside main */
+    padding: 50px; /* Space around content */
+}
+
+.extras-heading {
+    color: #9C8386;
+    border-bottom: 2px solid #9C8386;
+    display:inline-block;
+    text-align: center; 
+    padding-bottom: 5px;
+    margin: 0 auto 10px auto;
+}
+main {
+    text-align: center;      /* centres inline elements like this */
+}
+
+.extras-list {
+    display: inline-block;     /* keeps list centred */
+    text-align: left;          /* keeps bullets neat */
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+.extras-list li {
+    margin-bottom: 8px;        /* space between items */
+}
+
+.contact-btn {
+    display: block;           /* puts it on a new line */
+    margin: 15px auto;        /* centres it under the list */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #9C8386; /* matches theme */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    background-color: #7a6668;
+}
+
+.extras-heading {
+    color: #9C8386;
+    border-bottom: 2px solid #9C8386;
+    display:block;
+    text-align: center;
+    padding-bottom: 5px;
+    margin: 0 auto 10px auto;
+}
+main {
+    text-align: center;      /* centres inline elements like this */
+}
+
+/* ============================================================
+    BUTTON STYLES
+   ============================================================ */
+
+/* Style all buttons */
+button {
+    padding: 10px 20px; /* Space inside the button */
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change mouse to pointer on hover */
+    margin: 10px; /* Space around buttons */
+}
+
+/* Change button colour when hovered */
+button:hover {
+    background-color: #555; /* Slightly lighter background */
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+/* Style the footer */
+footer {
+    text-align: center; /* Centre footer text */
+    padding: 20px; /* Space inside footer */
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    position: fixed; /* Keep footer at bottom of screen */
+    width: 100%; /* Full width */
+    bottom: 0; /* Stick to bottom */
+}
+
+/* ============================================================
+   FORM STYLES (Contact Page)
+   ============================================================ */
+/* Style the form container */
+form {
+    text-align: left; /* Align text to the left */
+    max-width: 400px; /* Limit form width */
+    margin: 0 auto; /* Centre form on page */
+    background-color: white; /* White background */
+    padding: 20px; /* Space inside form */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Style form labels */
+label {
+    display: block; /* Place labels on their own line */
+    margin-bottom: 5px; /* Space below label */
+}
+
+/* Style text inputs and textarea */
+input, textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Space inside fields */
+    margin-bottom: 10px; /* Space between fields */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Set height of message box */
+textarea {
+    height: 100px;
+}
+
+
+/* Any element INSIDE .yacht-section (such as table, td, img, p) can be styled using selectors like:
+.yacht-section table
+.yacht-section td
+.yacht-image
+
+This means the styles apply ONLY to elements inside the yacht-section and not to the rest of the page. */
+
+/* Style the table (optional - makes it look cleaner) */
+.people table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+/* Give each table cell some spacing */
+.people td {
+    padding: 15px;
+    background-color: white;
+    text-align: center;
+}
+
+/* Style restaurant images */
+/*
+    Restaurant IMAGE STYLING
+
+    The restaurant images used on this page are originally different sizes and shapes.
+    CSS is used to control how the images are displayed so they look consistent.
+
+    - width and height force all images to be the same size.
+    - object-fit controls how the image fits inside the fixed-size area.
+    - object-fit: cover fills the space while keeping the image's shape and crops any extra parts without stretching.
+    - This approach is commonly used on real websites for product images.
+*/
+.people-image {
+    width: 200px;
+    height: 200;          /* ✅ keeps proportions */
+    object-fit:cover;
+    object-position:top;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+/* Style the caption under each image */
+.people p {
+    font-weight: bold;
+    margin: 0;
+}
+
+/* 
+    CSS GRID LAYOUT (Gallery)
+    display: grid turns this container into a grid layout.
+    grid-template-columns defines how many columns appear and how wide they are.
+    auto-fit:
+    - Automatically decides how many columns fit on the screen.
+    minmax(220px, 1fr):
+    - Each column must be at least 220px wide.
+    - Columns can grow to fill available space (1fr = one fraction).
+
+    Result:
+    - On large screens: more columns appear.
+    - On small screens: fewer columns appear.
+    - This makes the gallery responsive.
+*/
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Space around the gallery */
+    max-width: 1100px; /* keeps it from stretching too wide on big screens */
+    margin: 0 auto; /* centres the gallery */
+}
+
+.gallery-item {
+    width: 100%;
+    height: 220px; /* forces all images to same height */
+    object-fit: cover; /* crops images neatly (no stretching) */
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+     /* smooth hover animation */
+    transition: transform 0.2s ease;
+}
+
+/*
+    GALLERY HOVER EFFECT
+
+    :hover runs when the mouse is placed over an image.
+
+    transform: scale(1.03):
+    - Slightly enlarges the image.
+    - Gives visual feedback to the user.
+
+    transition
+    - Smooths the animation.
+    - Prevents sudden size changes
+
+    This effect improves user experience and makes the gallery feel interactive.
+*/
+
+.gallery-item:hover {
+    transform: scale(1.03);
+    
+}
+
+/* Menu and Checkout styles for QQI Level 5 */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.menu-category {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    background-color: #ffffff;
+}
+
+.menu-category h3 {
+    margin-top: 0;
+    color: #9C8386;
+}
+
+.menu-item {
+    border-top: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.menu-item h4 {
+    margin: 0 0 6px;
+    font-size: 1.05rem;
+}
+
+.menu-item .price {
+    font-weight: bold;
+    float: right;
+}
+
+.item-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+}
+
+.item-actions input[type="number"] {
+    width: 70px;
+    padding: 5px;
+}
+
+.item-actions button {
+    font-size: 0.9rem;
+    background-color: #9C8386;
+    border-radius: 4px;
+}
+
+.cart-summary, .checkout-cart, .checkout-form, .checkout-actions {
+    max-width: 640px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: left;
+}
+
+.checkout-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+.checkout-table th,
+.checkout-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.checkout-table th {
+    background-color: #f7f7f7;
+}
+
+.checkout-total {
+    font-size: 1.15rem;
+    margin-top: 12px;
+}
+
+#checkout-message {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .item-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .item-actions input,
+    .item-actions button {
+        width: 100%;
+    }
+}
+
+/* Centring the image Services.jpeg on the Services page */
+.centre {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 30px;     /* space above */
+margin-bottom: 30px;  /* space below */
+width: 50%;
+}

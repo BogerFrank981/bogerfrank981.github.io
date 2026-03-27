@@ -1,0 +1,91 @@
+<!--
+    File: index.html
+    Purpose: Home page of the Eastern Balti House (Monaghan) website
+
+    This page:
+    - Introduces the restaurant/takeaway service and its offerings
+    - Displays a few images of what the company is like for both the customers and the staff
+    - Demonstrates how JavaScript responds to button clicks
+    - Shows how JavaScript can run when a page loads
+
+    Technologies used:
+    - HTML: Page structure and content
+    - CSS: Styling and layout (style.css)
+    - JavaScript: Interactivity (script.js)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="test.html">Testimonials</a></li>
+            <li><a href="order.html">Order Online</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <p id="today-date"></p>
+
+    <main>
+        <h1>Welcome to the Eastern Balti House</h1>
+
+        <h3>Why not come and visit us.</h3>
+        <p>Here, in the Eastern Balti House, you’ll find all the information about our food, our service, and what makes dining with us special. We focus on fresh ingredients, great flavours, and a friendly atmosphere that suits everything from casual meals to celebrations.</p>
+
+        <p>Our menu includes hearty mains, light bites, desserts, and seasonal specials designed to suit all tastes and ages.</p>
+
+        <p>Every plate is prepared with care, checked for quality, and served with attention to detail so you can enjoy a comfortable and reliable dining experience.</p>
+
+        <p>Whether you’re visiting for the first time or returning for a favourite dish, our staff are happy to guide you through the menu and help you find exactly what you’re in the mood for.</p>
+
+        <p>Use the buttons below to see how JavaScript adds interactivity to the page by updating content instantly.</p>
+
+        <section class = "people">
+        <h2>Photos</h2>
+
+        <table border="1" style="margin: 0 auto; border-collapse: collapse;">
+            <tr>
+                <td>
+                    <img class="people-image" src="images/Customerimage.png" alt="customer" >
+                    <p>A Customer</p>                
+                </td>
+
+                <td>
+                    <img class="people-image" src="images/AtWork.png" alt="the receptionist" >
+                    <p>The Receptionist</p>
+                </td>
+
+                <td>
+                    <img class="people-image" src="images/Entrance.png" alt="entrance" >
+                    <p>Entrance</p>
+                </td>
+            </tr>
+        </table>
+        </section>
+
+            <button onclick="changeBackgroundColour()">Change Background Colour</button>
+            <button onclick="showHomeAlert()">Click Me</button>
+            <button onclick="showInfo()">Show Restaurant Info</button>
+            <button onclick="confirmContact()">Go to Contact</button>
+    </main>
+
+    <footer>
+        <p>&copy 2026 Eastern Balti House. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
